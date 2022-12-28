@@ -1,0 +1,238 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #A2AEB0;
+}
+
+#board {
+	position: absolute;
+	width: 100%;
+}
+
+#tasker {
+	position: relative;
+	width: 750px;
+	background-color: white;
+	margin: 0 auto;
+	margin-top: 35px;
+	height: 600px;
+	border: 1px solid #8A9E9E;
+	border-radius: 8px;
+	box-shadow: 4px -5px 8px 3px #6F6F6F;
+}
+
+/* ШАПКА */
+#header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #808db4;
+	height: 13%;
+	border-bottom: 4px double white;
+}
+#header__listToDo {
+	flex-grow: 1;
+}
+#header__logo img{
+	width: 50px;
+	float: left;
+	margin-left: 40px;
+	margin-top: 15px;
+}
+#header__center {
+	flex-grow: 1;
+	line-height: 1.9em;
+}
+#header__openPage{
+	margin-top: 10px;
+	font-size: 1.7em;
+	letter-spacing: 0.5em;
+}
+time {
+	font-size: 1em;margin-left: 15px;
+}
+#header__toDo {
+	margin-top: 13px;
+	font-size: 1.5em;
+	color: white;
+	width: 50%;
+}
+#header__logo {
+	text-decoration: none;
+}
+#header_name {
+	flex-grow: 1;
+}
+#name__h1 {
+	margin-right: 35px;
+	margin-top: 25px;
+	font-size: 1.7em;
+	color: white;
+}
+	
+/*MAIN CONTENT*/
+#tasker__mainContent {
+	height: 87%;
+	display: flex;
+}
+
+/*НАВИГАЦИЯ*/
+#tasker__nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #CED8FF;
+	border: 2px solid #6e6c64;
+	border-top: 0;
+	border-radius: 0 0 0 10px;
+	padding: 6% 0;
+	height: 428px;
+
+}
+
+.nav__section {
+	flex-grow: 1;
+	width: 70px;
+	height: 6%;
+	text-align: left;
+	margin-right: 13px;
+
+}
+
+.nav__section button {
+	background-color: #AEAEAE;
+	width: 100%;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+.nav__icon {
+	height: 40px;
+	width: 63%;
+	border-radius: 0 5px 5px 0;
+	border: 2px solid #e6ebf2;
+	padding: 9px 9px 9px 2px;
+	transition: 650ms linear;
+}
+
+.nav__icon:hover {
+	background-color: #e3d5af;
+	margin-left: 27px;
+	transition: 350ms linear;
+	box-shadow: -3px 0 10px 5px #bfb9a4;
+
+}
+
+
+
+/*ОСНОВНАЯ ЧАСТЬ*/
+main#tasker__main {
+	height: 428px;
+	flex-grow: 100;
+	background-color: #DAE3FA;
+	border-radius: 0 0 10px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+#main__workSpace {
+	flex-grow: 9;
+	border-bottom: 2px solid gray;
+	overflow-y: scroll;
+	height: calc(428px * 0.7);
+
+}
+
+#tasksList {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.TaskBox {
+	flex-grow: 1;
+	width: 30%;
+	max-width: 35%;
+	height: 100px;
+	margin: 5px;
+	border: 2px solid black;
+	background-color: #e6ebf2;
+}
+
+.TaskTitle{
+	border-bottom: 2px solid white;
+}
+
+#addTask {
+	height: 50px;
+	width: 170px;
+	border-radius: 30px;
+	border: 2px solid black;
+	font-size: 12px;
+	position: absolute;
+	right: 25px;
+	bottom: 70px;
+	background-color: #BABEDD;
+	text-decoration: auto;
+	box-shadow: 0 0 10px #576E61;
+	cursor: pointer;
+	z-index: 3;
+	transition: 350ms linear;
+
+}
+
+#addTask:hover {
+	background-color: #e3d5af;
+	transition: 350ms linear;
+	box-shadow: 0 3px 5px 1px #44423a;
+	bottom: 71px;
+}
+
+
+/*INPUT BOX*/
+#inputBox {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	z-index: -1;
+	height: 150px;
+	width: 320px;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	border: 1px solid black;
+	background-color: white;
+
+}
+
+#inputBox__title {
+	flex-grow: 2;
+
+}
+
+#inputBox__note{
+	flex-grow: 3;
+
+}
+
+#inputBox__buttons {
+	flex-grow: 1.5;
+	width: 100%;
+}
+
+#inputBtnCancel, #inputBtnSave {
+	width: 40%;
+	height: 70%;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#inputBtnSave {
+	float: right;
+}

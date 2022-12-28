@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ToDoList</title>
+	<link rel="stylesheet" href="styles/generalStyle.css">
+</head>
+<body>
+	<div id="board">
+		<div id="tasker">
+			<!-- 		Header  		-->
+			<header id="header">
+				<div id="header__listToDo">
+					<a href="#" id="header__logo">
+						<img src="images/icons/logo.png" alt="">
+					</a>
+				</div>
+				<div id="header__center">
+					<h2 id="header__openPage">Things To Do</h2>
+					<time datetime="<datetime>">Monday 12:00</time>
+				</div>		  
+				<div id="header__name">
+					<h1 id="name__h1">'Clock</h1>
+				</div>
+			</header>
+			<!-- 		Main			-->
+			<div id="tasker__mainContent">
+				<!-- 		navigation			-->
+				<nav id="tasker__nav">
+					<div class="nav__section">
+						<a id="nav_list" href="#" title="List">
+							<img class="nav__icon" src="images/icons/todo.png" alt="ToDoList" title="List">
+						</a>
+					</div>
+					<div class="nav__section">
+						<a id="nav_notepad" href="html_pages/notes.html" title="Note">
+							<img class="nav__icon" src="images/icons/note.png" alt="Note" title="Note">
+						</a>
+					</div>
+					<div class="nav__section">
+						<a id="nav_myProjects" href="html_pages/myProjects.html" title="MyProjects">
+							<img class="nav__icon" src="images/icons/projects.png" alt="MyProjects"title="MyProjects">
+						</a>
+					</div>
+					<div class="nav__section">
+						<a id="nav_wishlist" href="html_pages/wishlist.html" title="Wishlist">
+							<img class="nav__icon" src="images/icons/wishlist.png" alt="WishList" title="WishList">
+						</a>
+					</div>
+					<div class="nav__section">
+						<a id="nav_trash" href="html_pages/trash.html" title="Trash">
+							<img class="nav__icon" src="images/icons/delete.png" alt="Trash" title="Trash">
+						</a>
+					</div>
+				</nav>
+				<!-- 		Tasks			-->
+				<main id="tasker__main">
+					<div id="main__workSpace">
+						<div id="tasksList">
+							
+						</div>
+						<button id="addTask">ADD TASK</button>
+					</div>
+				</main>
+
+			</div>
+
+		</div>
+	</div>
+	<form id="inputBox">
+		<input placeholder="title" type="text" id="inputBox__title">
+		<input placeholder="text"  type="text" id="inputBox__note">
+		<div id="inputBox__buttons">
+			<button id="inputBtnCancel">Cancel</button>
+			<button id="inputBtnSave">Save</button>
+		</div>
+	</form>
+	<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
