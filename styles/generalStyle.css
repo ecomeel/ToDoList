@@ -3,13 +3,11 @@
 	padding: 0px;
 }
 
-body {
-	background-color: #A2AEB0;
-}
-
-#board {
+#backBoard {
 	position: absolute;
 	width: 100%;
+	background-color: #A2AEB0;
+	height: 100%;
 }
 
 #tasker {
@@ -32,44 +30,16 @@ body {
 	height: 13%;
 	border-bottom: 4px double white;
 }
-#header__listToDo {
-	flex-grow: 1;
-}
+
 #header__logo img{
 	width: 50px;
 	float: left;
 	margin-left: 40px;
 	margin-top: 15px;
 }
-#header__center {
-	flex-grow: 1;
-	line-height: 1.9em;
-}
-#header__openPage{
-	margin-top: 10px;
-	font-size: 1.7em;
-	letter-spacing: 0.5em;
-}
-time {
-	font-size: 1em;margin-left: 15px;
-}
-#header__toDo {
-	margin-top: 13px;
-	font-size: 1.5em;
-	color: white;
-	width: 50%;
-}
+
 #header__logo {
 	text-decoration: none;
-}
-#header_name {
-	flex-grow: 1;
-}
-#name__h1 {
-	margin-right: 35px;
-	margin-top: 25px;
-	font-size: 1.7em;
-	color: white;
 }
 	
 /*MAIN CONTENT*/
